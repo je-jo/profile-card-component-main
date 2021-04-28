@@ -1,0 +1,116 @@
+:root {
+    --darkcyan: hsl(185, 75%, 39%);
+    --bluedark: hsl(229, 23%, 23%);
+    --grayblue: hsl(227, 10%, 46%);
+    --neutral: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+body {
+    font-family: 'Kumbh Sans', Arial, sans-serif;
+    font-size: 18px;
+    color: var(--grayblue);
+    font-weight: 700;
+    text-align: center;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--darkcyan);
+    /* background-image: url(images/bg-pattern-top.svg);
+    background-position: cover; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.profile-card {
+    background-color: white;
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    width: 325px;
+    height: 372px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-card img {
+    display: block;
+    margin: 87px auto 0;
+    border: 5px solid #fff;
+    border-radius: 50%;
+
+}
+
+h1 {
+    color: var(--bluedark);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+span {
+    color: var(--grayblue);
+    text-align: right;
+    font-weight: 400;
+    margin-left: 5PX;
+}
+
+h2 {
+    color: var(--grayblue);
+    font-weight: 400;
+    font-size: 14px; 
+    line-height: 2; 
+}
+
+h3 {
+    color: var(--neutral);
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 1.3px;
+    line-height: 1.7; 
+   
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+height: 100%;
+justify-content: center;
+align-items: center;
+}
+
+.data {
+    width: 15%;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: row;
+    
+border-top: 1px solid var(--neutral);
+height: 100%;
+justify-content: space-evenly;
+align-items: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+  .attribution { font-size: 11px; font-weight: 400; }
+  .attribution a { color: #fff; }
