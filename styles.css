@@ -9,13 +9,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 1px solid red; */
 }
 
 body {
     font-family: 'Kumbh Sans', Arial, sans-serif;
     font-size: 18px;
-    color: var(--grayblue);
+    color: var(--bluedark);
     font-weight: 700;
     text-align: center;
 }
@@ -23,9 +22,11 @@ body {
 .main {
     height: 100vh;
     width: 100%;
-    background-color: var(--darkcyan);
-    /* background-image: url(images/bg-pattern-top.svg);
-    background-position: cover; */
+
+    background: url(images/bg-pattern-top.svg) calc(50% - 520px) calc(50% - 370px) no-repeat, 
+                url(images/bg-pattern-bottom.svg) calc(50% + 450px) calc(50% + 520px) no-repeat,
+                var(--darkcyan);
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,9 +36,14 @@ body {
 
 
 .profile-card {
+    width: 325px;
+    height: 372px;
+    border-radius: 15px;
+
     background-color: white;
     background-image: url(images/bg-pattern-card.svg);
     background-repeat: no-repeat;
+
     width: 325px;
     height: 372px;
     border-radius: 15px;
@@ -56,7 +62,6 @@ body {
 }
 
 h1 {
-    color: var(--bluedark);
     font-size: 18px;
     line-height: 1.5;
 }
@@ -85,32 +90,49 @@ h3 {
 
 }
 
-.info {
+.card-section {
     display: flex;
-    flex-direction: column;
-height: 100%;
-justify-content: center;
-align-items: center;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-.data {
-    width: 15%;
+.info {
+    flex-direction: column;
 }
 
 .numbers {
-    display: flex;
-    flex-direction: row;
-    
-border-top: 1px solid var(--neutral);
-height: 100%;
-justify-content: space-evenly;
-align-items: center;
+    border-top: 1px solid var(--neutral);
+    justify-content: space-evenly;
 }
+
+.data {
+    width: 15%; 
+} 
 
 footer {
     position: absolute;
     bottom: 0;
 }
 
-  .attribution { font-size: 11px; font-weight: 400; }
-  .attribution a { color: #fff; }
+  .attribution { 
+      font-size: 11px; 
+      font-weight: 400; 
+    }
+
+  .attribution a { 
+      color: #fff;
+      text-decoration: none;
+    }
+
+  .attribution a:hover {  
+      text-decoration: underline;
+      }
+
+
+@media only screen and (min-width: 800px) {
+    .profile-card {
+        width: 350px;
+        
+    }
+      }
