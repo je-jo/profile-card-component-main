@@ -23,7 +23,7 @@ body {
     height: 100vh;
     width: 100%;
 
-    background: url(images/bg-pattern-top.svg) calc(50% - 520px) calc(50% - 370px) no-repeat, 
+    background: url(images/bg-pattern-top.svg) calc(50% - 520px) calc(50% - 370px) no-repeat,
                 url(images/bg-pattern-bottom.svg) calc(50% + 450px) calc(50% + 520px) no-repeat,
                 var(--darkcyan);
 
@@ -40,7 +40,7 @@ body {
     height: 372px;
     border-radius: 15px;
 
-    background-color: white;
+    background-color: #fff;
     background-image: url(images/bg-pattern-card.svg);
     background-repeat: no-repeat;
 
@@ -61,6 +61,28 @@ body {
 
 }
 
+.card-section {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    flex-direction: column;
+}
+
+.stats {
+    border-top: 1px solid var(--neutral);
+    justify-content: space-evenly;
+}
+
+.stats div {
+    width: 15%; 
+} 
+
+/* ======TEXT======= */
+
 h1 {
     font-size: 18px;
     line-height: 1.5;
@@ -70,7 +92,7 @@ span {
     color: var(--grayblue);
     text-align: right;
     font-weight: 400;
-    margin-left: 5PX;
+    margin-left: 5px;
 }
 
 h2 {
@@ -85,34 +107,15 @@ h3 {
     font-weight: 400;
     font-size: 10px;
     letter-spacing: 1.3px;
-    line-height: 1.7; 
-   
-
+    line-height: 1.7;
 }
 
-.card-section {
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.info {
-    flex-direction: column;
-}
-
-.numbers {
-    border-top: 1px solid var(--neutral);
-    justify-content: space-evenly;
-}
-
-.data {
-    width: 15%; 
-} 
+/* ================= */
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    color: #fff;
 }
 
   .attribution { 
